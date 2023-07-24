@@ -83,6 +83,10 @@ while [[ $# -gt 0 ]]; do
       _swap=$2
       shift
       ;;
+    --alpine-version)
+      _os_version=$2
+      shift
+      ;;
     *)
       error "Unrecognized option $1"
       ;;
